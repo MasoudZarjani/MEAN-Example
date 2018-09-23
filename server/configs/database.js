@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import config from './config';
+const mongoose = require('mongoose');
+const config = require('./app');
 const { db: { connection, host, port, name } } = config;
 const connectionString = `${connection}://${host}:${port}/${name}`;
 mongoose.Promise = global.Promise;
@@ -10,4 +10,4 @@ mongoose.connect(connectionString, { useNewUrlParser: true }, (err) => {
         console.log('Error in DB Connection: '.JSON.stringify(err, undefined, 2));
 });
 
-export default mongoose;
+module.exports = mongoose;

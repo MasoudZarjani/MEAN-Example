@@ -10,4 +10,4 @@ const config = {
         connection: process.env.DB_CONNECTION || 'mongodb',
     }
 };
-export default config;
+module.exports = config;
