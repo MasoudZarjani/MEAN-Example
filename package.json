@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "my personal blog with mean(mongodb, express, angular, node js)",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "cd server && npm run start",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasoudZarjani/MEAN-Example.git"
+  },
+  "keywords": [
+    "blog",
+    "masoud",
+    "zarjani",
+    "programmer"
+  ],
+  "author": "masoud zarjani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MasoudZarjani/MEAN-Example/issues"
+  },
+  "homepage": "https://github.com/MasoudZarjani/MEAN-Example#readme"
+}
